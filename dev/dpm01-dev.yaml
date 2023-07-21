@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: dev
-  name: deploy01-dev-ns
+  name: deploy01
 spec:
   replicas: 3
   selector:
@@ -14,7 +14,7 @@ spec:
         app: nodejs
     spec:
       containers:
-      - name: mynodejs_app
+      - name: mynodejs
         image: techwithnc/nodejs:1.0
         resources:
           limits:
