@@ -8,6 +8,6 @@ spec:
   selector:
     app: myweb
   ports:
-  - port: 3002
-    targetPort: 80
-    nodePort: 30200
+  - port: 3000
+    targetPort: 3000
+    nodePort: 33000
