@@ -4,7 +4,7 @@ metadata:
   namespace: dev
   name: deploy01
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nodejs
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mynodejs
-        image: techwithnc/nodejs:1.0
+        image: techwithnc/nodejs:2.0
         resources:
           limits:
             memory: "128Mi"
