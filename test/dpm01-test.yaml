@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mynginxsvr
-        image: techwithnc/nginx:3.0
+        image: techwithnc/nginx:4.0
         resources:
           limits:
             memory: "128Mi"
