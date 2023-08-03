@@ -4,7 +4,7 @@ metadata:
   namespace: test
   name: deploy01
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mynginxsvr
-        image: techwithnc/nginx:4.0
+        image: techwithnc/nginx:3.0
         resources:
           limits:
             memory: "128Mi"
