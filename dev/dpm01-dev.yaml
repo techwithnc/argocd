@@ -4,7 +4,7 @@ metadata:
   namespace: dev
   name: deploy01
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nodejs
@@ -19,6 +19,6 @@ spec:
         resources:
           limits:
             memory: "128Mi"
-            cpu: "100m"
+            cpu: "200m"
         ports:
         - containerPort: 3000
